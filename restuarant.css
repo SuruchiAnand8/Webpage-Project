@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #343a40;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section#home {
+    background-image: url;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 8rem 2rem;
+    font-size: 2rem;
+}
+
+section#home h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    margin: 0;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+section#home p {
+    font-size: 3.6rem;
+    font-style: oblique;
+    color: rgb(24, 19, 145);
+    border: #ff6347;
+    margin: 1rem 0;
+}
+
+section#menu {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+section#menu h2 {
+    color: #d018b4;
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+section#menu ul li {
+    background-color: #f8f9fa;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #333333;
+    transition: background-color 0.3s;
+}
+
+section#menu ul li:hover {
+    background-color: #17cd41;
+    color: #ffffff;
+}
+
+section#gallery {
+    background-color: #e9ecef;
+}
+
+section#gallery h1 {
+    color: #19cce7ed;
+    margin-bottom: 2rem;
+}
+
+section#gallery .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section#gallery .gallery img {
+    width: 200px;
+    height: auto;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 2px solid #5bc0de;
+    transition: transform 0.3s;
+}
+
+section#gallery .gallery img:hover {
+    transform: scale(1.1);
+}
+
+section#about {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+section#about h2 {
+    color: #5cb85c;
+    margin-bottom: 2rem;
+}
+
+section#about p {
+    color: #d21313;
+    font-size: 1.2rem;
+}
+
+section#contact {
+    background-color: #e9ecef;
+}
+
+section#contact h2 {
+    color: #dd3832;
+    margin-bottom: 2rem;
+}
+
+section#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#contact form label {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #3b3335;
+}
+
+section#contact form input, section#contact form textarea {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 1rem;
+}
+
+section#contact form button {
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 0;
+    background-color: #d9534f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section#contact form button:hover {
+    background-color: #137610;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes slideDown {
+    from { top: -100px; }
+    to { top: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+@keyframes textGlow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 20px #ff6347; }
+}
